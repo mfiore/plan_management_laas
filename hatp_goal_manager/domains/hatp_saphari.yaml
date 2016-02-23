@@ -1,0 +1,66 @@
+---
+hatp_goal_manager:
+  action_list: 
+    - TravelTo
+    - HandOver
+    - Pick
+    - Place
+    - Clean
+    - Glue
+    - AttachBracket
+    - StartPointing
+    - StopPointing
+    - CarryTo
+  TravelTo:
+    shary_name: navigate_to
+    parameters:
+      - agent
+      - location
+  HandOver:
+    shary_name: handover
+    parameters:
+      - agent1
+      - agent2
+      - object
+  Pick:
+    shary_name: take
+    parameters:
+      - agent
+      - object
+  Place:
+    shary_name: place_in_location 
+    parameters:
+      - agent
+      - object
+  Clean:
+    shary_name: clean
+    parameters:
+      - agent
+      - surface
+  Glue:
+    shary_name: glue
+    parameters:
+      - agent
+      - surface
+  AttachBracket:
+    shary_name: attach_bracket
+    parameters:
+      - agent
+      - bracket
+      - surface
+  StartPointing:
+    shary_name: start_pointing 
+    parameters:
+      - agent
+      - surface
+  StopPointing:
+    shary_name: stop_pointing
+    parameters:
+      - agent
+      - surface
+  CarryTo:
+    shary_name: navigate_to
+    parameters:
+      - agent
+      - element
+      - location

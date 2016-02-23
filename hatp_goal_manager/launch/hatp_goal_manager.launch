@@ -1,0 +1,9 @@
+<launch>
+	<rosparam command="load" file="$(find hatp_goal_manager)/domains/hatp_saphari.yaml" />
+
+	<node name="hatponboard" pkg="hatponboard" type="hatponboard"  />
+	<node name="hatpconsole" pkg="hatpconsole" type="hatpconsole"  />
+
+	<node name="hatp_goal_manager" pkg="hatp_goal_manager" type="hatp_goal_manager_node" output="screen" />
+
+</launch>
